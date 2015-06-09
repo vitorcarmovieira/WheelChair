@@ -15,6 +15,10 @@
 		4E7FCED11B2637DE005ADCAA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E7FCED01B2637DE005ADCAA /* Images.xcassets */; };
 		4E7FCED41B2637DE005ADCAA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E7FCED21B2637DE005ADCAA /* LaunchScreen.xib */; };
 		4E7FCEE01B2637DE005ADCAA /* WheelChair2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E7FCEDF1B2637DE005ADCAA /* WheelChair2Tests.m */; };
+		4E7FCEEF1B277C7D005ADCAA /* Equipamento.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E7FCEEE1B277C7D005ADCAA /* Equipamento.m */; };
+		4E7FCEF21B277C7E005ADCAA /* Usuario.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E7FCEF11B277C7E005ADCAA /* Usuario.m */; };
+		4E7FCEF51B277C7E005ADCAA /* Exercicio.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E7FCEF41B277C7E005ADCAA /* Exercicio.m */; };
+		4E7FCEF81B277C7E005ADCAA /* Local.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E7FCEF71B277C7E005ADCAA /* Local.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +46,14 @@
 		4E7FCED91B2637DE005ADCAA /* WheelChair2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WheelChair2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E7FCEDE1B2637DE005ADCAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4E7FCEDF1B2637DE005ADCAA /* WheelChair2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WheelChair2Tests.m; sourceTree = "<group>"; };
+		4E7FCEED1B277C7D005ADCAA /* Equipamento.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Equipamento.h; sourceTree = "<group>"; };
+		4E7FCEEE1B277C7D005ADCAA /* Equipamento.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Equipamento.m; sourceTree = "<group>"; };
+		4E7FCEF01B277C7E005ADCAA /* Usuario.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Usuario.h; sourceTree = "<group>"; };
+		4E7FCEF11B277C7E005ADCAA /* Usuario.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Usuario.m; sourceTree = "<group>"; };
+		4E7FCEF31B277C7E005ADCAA /* Exercicio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Exercicio.h; sourceTree = "<group>"; };
+		4E7FCEF41B277C7E005ADCAA /* Exercicio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Exercicio.m; sourceTree = "<group>"; };
+		4E7FCEF61B277C7E005ADCAA /* Local.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Local.h; sourceTree = "<group>"; };
+		4E7FCEF71B277C7E005ADCAA /* Local.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Local.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +102,7 @@
 				4E7FCECD1B2637DE005ADCAA /* Main.storyboard */,
 				4E7FCED01B2637DE005ADCAA /* Images.xcassets */,
 				4E7FCED21B2637DE005ADCAA /* LaunchScreen.xib */,
-				4E7FCEC71B2637DE005ADCAA /* WheelChair2.xcdatamodeld */,
+				4E7FCEF91B277C89005ADCAA /* Model */,
 				4E7FCEC01B2637DE005ADCAA /* Supporting Files */,
 			);
 			path = WheelChair2;
@@ -120,6 +132,22 @@
 				4E7FCEDE1B2637DE005ADCAA /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4E7FCEF91B277C89005ADCAA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4E7FCEC71B2637DE005ADCAA /* WheelChair2.xcdatamodeld */,
+				4E7FCEF61B277C7E005ADCAA /* Local.h */,
+				4E7FCEF71B277C7E005ADCAA /* Local.m */,
+				4E7FCEF31B277C7E005ADCAA /* Exercicio.h */,
+				4E7FCEF41B277C7E005ADCAA /* Exercicio.m */,
+				4E7FCEF01B277C7E005ADCAA /* Usuario.h */,
+				4E7FCEF11B277C7E005ADCAA /* Usuario.m */,
+				4E7FCEED1B277C7D005ADCAA /* Equipamento.h */,
+				4E7FCEEE1B277C7D005ADCAA /* Equipamento.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,9 +250,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E7FCEF51B277C7E005ADCAA /* Exercicio.m in Sources */,
 				4E7FCEC61B2637DE005ADCAA /* AppDelegate.m in Sources */,
 				4E7FCEC91B2637DE005ADCAA /* WheelChair2.xcdatamodeld in Sources */,
+				4E7FCEEF1B277C7D005ADCAA /* Equipamento.m in Sources */,
 				4E7FCECC1B2637DE005ADCAA /* ViewController.m in Sources */,
+				4E7FCEF81B277C7E005ADCAA /* Local.m in Sources */,
+				4E7FCEF21B277C7E005ADCAA /* Usuario.m in Sources */,
 				4E7FCEC31B2637DE005ADCAA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,6 +454,7 @@
 				4E7FCEE51B2637DE005ADCAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4E7FCEE61B2637DE005ADCAA /* Build configuration list for PBXNativeTarget "WheelChair2Tests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +463,7 @@
 				4E7FCEE81B2637DE005ADCAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
